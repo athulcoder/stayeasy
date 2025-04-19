@@ -1,19 +1,21 @@
 {
-  "name": "homzy-app",
+  "name": "stayeasy",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "homepage": "https://athulcoder.github.io/stayeasy",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "deploy": "gh-pages -d dist",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "homzy-app": "file:",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "stayeasy": "file:"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
