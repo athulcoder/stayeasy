@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import logo from "../assets/logo.jpg";
+import logo from "../assets/logo.png";
+import Navbar from "../components/navbar";
+
 const features = [
   {
     title: "Search Nearby PGs",
@@ -22,36 +24,7 @@ const features = [
 const Home = () => {
   return (
     <div className="scroll-smooth">
-      {/* Navbar */}
-      <nav className="bg-white shadow sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center space-x-2">
-            <span className="text-xl font-semibold text-blue-800">
-              StayEasy
-            </span>
-          </div>
-          <div className="space-x-6 hidden md:block">
-            <a href="#about" className="text-gray-700 hover:text-blue-600">
-              About
-            </a>
-            <a href="#features" className="text-gray-700 hover:text-blue-600">
-              Features
-            </a>
-            <a href="#how" className="text-gray-700 hover:text-blue-600">
-              How It Works
-            </a>
-            <a
-              href="#testimonials"
-              className="text-gray-700 hover:text-blue-600"
-            >
-              Testimonials
-            </a>
-            <a href="#founders" className="text-gray-700 hover:text-blue-600">
-              Founders
-            </a>
-          </div>
-        </div>
-      </nav>
+      <Navbar></Navbar>
 
       {/* Hero Section */}
       <section
@@ -73,7 +46,7 @@ const Home = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="w-36 h-36 sm:w-36 sm:h-36 mb-6 rounded-full"
+          className="w-[300px] h-[300px] sm:w-36 sm:h-36 mb-6 rounded-full"
         />
 
         <motion.p
