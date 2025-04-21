@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "homepage": "https://athulcoder.github.io/stayeasy",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
     "homzy-app": "file:",
